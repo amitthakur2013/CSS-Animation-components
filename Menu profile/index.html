@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Profile Menu
+	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<div class="card">
+		<div class="content">
+			<div class="imgBx">
+				<img src="https://blog.jodilogik.com/wp-content/uploads/2016/05/people.png">
+			</div>
+			<div class="header">
+				<h3>Someone Famous</h3>
+				<h4>Website Developer</h4>
+			</div>
+		</div>
+		
+		<ul class="navigation">
+			<li>
+				<a href="#"><ion-icon name="person-outline"></ion-icon> My Profile</a>
+			</li>
+			<li>
+				<a href="#"><ion-icon name="chatbox-outline"></ion-icon> Inbox</a>
+			</li>
+			<li>
+				<a href="#"><ion-icon name="information-circle-outline"></ion-icon> Help</a>
+			</li>
+			<li>
+				<a href="#"><ion-icon name="settings-outline"></ion-icon> Setting</a>
+			</li>
+			<li>
+				<a href="#"><ion-icon name="log-out-outline"></ion-icon> Logout</a>
+			</li>
+		</ul>
+
+		<div class="toggle">
+			<ion-icon name="chevron-down-outline"></ion-icon>
+		</div>
+	</div>
+
+<script>
+	btn=document.querySelector('.toggle');
+	btn.addEventListener('click',() => {
+		document.querySelector('.card').classList.toggle('active');
+		document.querySelector('.toggle').classList.toggle('active');
+
+	});
+
+</script>
+
+</body>
+</html>
